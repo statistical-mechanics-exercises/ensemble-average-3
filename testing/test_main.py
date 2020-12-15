@@ -27,9 +27,9 @@ class UnitTests(unittest.TestCase) :
                eee = hamiltonian( spins, fields[k] )
                numer[k] = numer[k] + mag*np.exp( -eee / 5.0 )
                pfunc[k] = pfunc[k] + np.exp( -eee / 5.0 )
-            for k in range(len(fields)) :
-                self.assertTrue( np.abs( fields[k] - this_x[k])<1e-7, "The function for computing the ensemble average is wrong" )
-                self.assertTrue( np.abs( numer[k]/pfunc[k] - this_y[k])<1e-7, "The function for computing the ensemble average is wrong" )
+        for k in range(len(fields)) :
+            self.assertTrue( np.abs( fields[k] - this_x[k])<1e-7, "The function for computing the ensemble average is wrong" )
+            self.assertTrue( np.abs( numer[k]/pfunc[k] - this_y[k])<1e-7, "The function for computing the ensemble average is wrong" )
                 
     def test_hamiltonian(self) :
         for i in range(2**5) :
