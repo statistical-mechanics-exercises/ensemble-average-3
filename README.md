@@ -12,7 +12,7 @@ and the average magnetisation using:
 
 where Z is the canonical partition function, ![](https://render.githubusercontent.com/render/math?math=\beta) is the inverse temperature and the sum runs over the M microstates, ![](https://render.githubusercontent.com/render/math?math=\mathbf{x}_j), that the system can adopt.  H, meanwhile, is one of the Hamiltonians that we learned how to compute during the first few of these exercises.  In this particular exercise we are going to use the Hamiltonian for a 2D Ising model in an external magnetic field, H.  Furthermore, we are going to describe the interaction of the spins using the mean field model so the Hamiltonian will be:
 
-![](https://render.githubusercontent.com/render/math?math=E=-\sum_{i=1}^N\left[H-frac{2D}{N}\sum_{j=1}^Ns_j\right]s_i)
+![](https://render.githubusercontent.com/render/math?math=E=-\sum_{i=1}^N\left[H-\frac{2D}{N}\sum_{j=1}^Ns_j\right]s_i)
 
 with ![](https://render.githubusercontent.com/render/math?math=D=2) and ![](https://render.githubusercontent.com/render/math?math=N=8).
 
